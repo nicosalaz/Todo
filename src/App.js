@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+   
+import React from 'react';
 import './App.css';
+import Form from './components/Form';
 
-function App() {
+/* ACTIVIDAD
+  - Van a habilitar la opcion de editar el todo, abre un input y edita el todo.
+  - Permitir completar la tarea
+  - Van a organizar el CSS a un diseño mas agradable
+ */
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='App-content'>
+        <p>Aqui haremos nuestro TODO</p>
+        <Form />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
